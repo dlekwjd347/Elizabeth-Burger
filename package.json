@@ -1,21 +1,22 @@
 {
-  "name": "eat-da-burger-dreami",
+  "name": "elizabeth-burger",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreG303/Eat-Da-Burger-Dreami.git"
+    "url": "git+https://github.com/dlekwjd347/Elizabeth-Burger.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndreG303/Eat-Da-Burger-Dreami/issues"
+    "url": "https://github.com/dlekwjd347/Elizabeth-Burger/issues"
   },
-  "homepage": "https://github.com/AndreG303/Eat-Da-Burger-Dreami#readme",
+  "homepage": "https://github.com/dlekwjd347/Elizabeth-Burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
