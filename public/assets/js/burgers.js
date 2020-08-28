@@ -1,60 +1,59 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".change-sleep").on("click", function(event) {
-    var id = $(this).data("id");
-    var newSleep = $(this).data("newsleep");
+  $(".change-burger").on("click", function(event) {
+      var id = $(this).data("id");
+      var newDevour = $(this).data("newdevour");
 
-    var newSleepState = {
-      sleepy: newSleep
-    };
+      var newDevourState = {
+          devour: newDevour
+      };
 
-    // Send the PUT request.
-    $.ajax("/api/cats/" + id, {
-      type: "PUT",
-      data: newSleepState
-    }).then(
-      function() {
-        console.log("changed sleep to", newSleep);
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
+      // Send the PUT request.
+      $.ajax("/api/burgers/" + id, {
+          type: "PUT",
+          data: newDevourState
+      }).then(
+          function() {
+              // Reload the page to get the updated list
+              location.reload();
+          }
+      );
   });
 
   $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
-    event.preventDefault();
+      // Make sure to preventDefault on a submit event.
+      event.preventDefault();
 
-    var newCat = {
-      name: $("#ca").val().trim(),
-      sleepy: $("[name=sleepy]:checked").val().trim()
-    };
+      var newBurger = {
+          name: $("#ca").val().trim(),
+          devour: $("[name=devoured]:checked").val().trim()
+      };
 
-    // Send the POST request.
-    $.ajax("/api/cats", {
-      type: "POST",
-      data: newCat
-    }).then(
-      function() {
-        console.log("created new cat");
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
+      // Send the POST request.
+      $.ajax("/api/burgers", {
+          type: "POST",
+          data: newBurger
+      }).then(
+          function() {
+              console.log("created new burger");
+              // Reload the page to get the updated list
+              location.reload();
+          }
+      );
   });
 
-  $(".delete-cat").on("click", function(event) {
-    var id = $(this).data("id");
+  $(".delete-burger").on("click", function(event) {
+      var id = $(this).data("id");
 
-    // Send the DELETE request.
-    $.ajax("/api/cats/" + id, {
-      type: "DELETE"
-    }).then(
-      function() {
-        console.log("deleted cat", id);
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
+      // Send the DELETE request.
+      $.ajax("/api/burgers/" + id, {
+          type: "DELETE"
+      }).then(
+          function() {
+              console.log("deleted burger", id);
+              // Reload the page to get the updated list
+              location.reload();
+          }
+      );
   });
 });

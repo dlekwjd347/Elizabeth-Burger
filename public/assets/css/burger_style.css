@@ -1,7 +1,10 @@
+body {
+  font-family: 'Coiny', cursive;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {
