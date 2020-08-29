@@ -10,6 +10,9 @@ if(typeof process.env.JAWSDB_URL === 'undefined'){
     password: "Dlekwjd347",
     database: "burgers_db"
   })
+}
+else{
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 };
 
 // Make connection.
