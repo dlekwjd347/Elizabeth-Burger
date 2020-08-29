@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,15 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/dlekwjd347/Elizabeth-Burger.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Elizabeth Lee",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dlekwjd347/Elizabeth-Burger/issues"
   },
-  "homepage": "https://github.com/dlekwjd347/Elizabeth-Burger#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "mysql": "^2.18.1"
-  }
+  "homepage": "https://github.com/dlekwjd347/Elizabeth-Burger#readme"
 }
