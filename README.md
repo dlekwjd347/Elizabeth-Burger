@@ -16,6 +16,9 @@ This burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum
 
 * The app will store every burger in a database, whether devoured or not.
 
+## APP
+
+![Deployed App](public\assets\screenshots\Capture1.JPG)
 
 ## Deployment 
 
