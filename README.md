@@ -18,7 +18,7 @@ This burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum
 
 ## APP
 
-![Deployed App](public\assets\screenshots\Capture1.JPG)
+![Deployed App](https://github.com/dlekwjd347/Elizabeth-Burger/blob/master/public/assets/screenshots/Capture1.JPG)
 
 ## Deployment 
 
